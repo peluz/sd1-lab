@@ -1,0 +1,6 @@
+V3 3
+FL /home/pedro/Documents/unb/labCD/mux/mux.vhd 2018/08/25.22:34:03 P.20131013
+EN work/mux 1535247535 FL /home/pedro/Documents/unb/labCD/mux/mux.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux/mux_arc 1535247536 \
+      FL /home/pedro/Documents/unb/labCD/mux/mux.vhd EN work/mux 1535247535
