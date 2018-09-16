@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/pedro/Documents/unb/labCD/proj3/mux8/mux8_isim_beh.exe" -prj "/home/pedro/Documents/unb/labCD/proj3/mux8/mux8_beh.prj" "work.mux8" 

@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/unb/labCD/proj3/decoder/decoder.xst" -ofn "/home/pedro/Documents/unb/labCD/proj3/decoder/decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lsDecoder.ucf -uc msDecoder.ucf -p xc3s100e-cp132-4 decoder.ngc decoder.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o decoder_map.ncd decoder.ngd decoder.pcf 
+xst -intstyle ise -ifn "/home/pedro/Documents/unb/labCD/proj3/decoder/decoder.xst" -ofn "/home/pedro/Documents/unb/labCD/proj3/decoder/decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc lsDecoder.ucf -p xc3s100e-cp132-4 decoder.ngc decoder.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o decoder_map.ncd decoder.ngd decoder.pcf 
+par -w -intstyle ise -ol high -t 1 decoder_map.ncd decoder.ncd decoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml decoder.twx decoder.ncd -o decoder.twr decoder.pcf -ucf lsDecoder.ucf 
+bitgen -intstyle ise -f decoder.ut decoder.ncd 

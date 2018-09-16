@@ -1,0 +1,5 @@
+NET "A" loc = "K3";
+NET "B" loc = "L3";
+NET "C" loc = "P11";
+NET "X" loc = "M11";
+NET "Y" loc = "M5";

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-08-25T22:24:35</DateModified>
+  <DateModified>2018-09-16T17:52:45</DateModified>
   <ModuleName>mux</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/pedro/Documents/unb/labCD/mux/iseconfig/mux.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/pedro/Documents/unb/labCD/mux</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/pedro/Documents/unb/labCD/mux/</ImplementationReportsDirectory>
   <DateInitialized>2018-08-25T22:11:44</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

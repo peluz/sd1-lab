@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/unb/labCD/muxFunc.xst" -ofn "/home/pedro/Documents/unb/labCD/muxFunc.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 muxFunc.ngc muxFunc.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o muxFunc_map.ncd muxFunc.ngd muxFunc.pcf 
+par -w -intstyle ise -ol high -t 1 muxFunc_map.ncd muxFunc.ncd muxFunc.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml muxFunc.twx muxFunc.ncd -o muxFunc.twr muxFunc.pcf 
+bitgen -intstyle ise -f muxFunc.ut muxFunc.ncd 

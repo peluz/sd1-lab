@@ -1,0 +1,6 @@
+V3 3
+FL /home/pedro/Documents/unb/labCD/proj3/mux8/mux8.vhd 2018/08/31.16:37:34 P.20131013
+EN work/mux8 1535744576 FL /home/pedro/Documents/unb/labCD/proj3/mux8/mux8.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux8/Behavioral 1535744577 \
+      FL /home/pedro/Documents/unb/labCD/proj3/mux8/mux8.vhd EN work/mux8 1535744576

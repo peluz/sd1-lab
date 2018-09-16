@@ -1,17 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-08-25T22:15:41</DateModified>
+  <DateModified>2018-09-13T11:52:48</DateModified>
   <ModuleName>adder</ModuleName>
-  <SummaryTimeStamp>2018-08-25T22:07:21</SummaryTimeStamp>
+  <SummaryTimeStamp>2018-08-31T09:12:29</SummaryTimeStamp>
   <SavedFilePath>/home/pedro/Documents/unb/labCD/proj2/iseconfig/adder.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/pedro/Documents/unb/labCD/proj2</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/pedro/Documents/unb/labCD/proj2/</ImplementationReportsDirectory>
   <DateInitialized>2018-08-25T21:59:12</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
   <viewgroup label="Design Overview" >
-   <view inputState="Unknown" program="implementation" ShowPartitionData="false" type="FPGASummary" file="adder_summary.html" label="Summary" >
+   <view inputState="Unknown" program="implementation" ExpandErrors="true" ShowPartitionData="false" ExpandConstraints="true" type="FPGASummary" file="adder_summary.html" label="Summary" ExpandWarnings="true" >
     <toc-item title="Design Overview" target="Design Overview" />
     <toc-item title="Design Utilization Summary" target="Design Utilization Summary" />
     <toc-item title="Performance Summary" target="Performance Summary" />

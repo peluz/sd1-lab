@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/unb/labCD/proj3/mux8/mux8.xst" -ofn "/home/pedro/Documents/unb/labCD/proj3/mux8/mux8.syr" 
+netgen -intstyle ise -ar Structure -tm mux8 -w -dir netgen/synthesis -ofmt vhdl -sim mux8.ngc mux8_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mux8.ucf -p xc3s100e-cp132-4 mux8.ngc mux8.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o mux8_map.ncd mux8.ngd mux8.pcf 
+par -w -intstyle ise -ol high -t 1 mux8_map.ncd mux8.ncd mux8.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mux8.twx mux8.ncd -o mux8.twr mux8.pcf -ucf mux8.ucf 
+bitgen -intstyle ise -f mux8.ut mux8.ncd 

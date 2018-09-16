@@ -1,0 +1,8 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/opt/Xilinx/14.7/ISE_DS/PlanAhead/tps/lnx64/jre/lib/amd64/server/libjvm.so(+0x744749) [0x7fc8f2565749]
+/opt/Xilinx/14.7/ISE_DS/PlanAhead/tps/lnx64/jre/lib/amd64/server/libjvm.so(JVM_handle_linux_signal+0xa7) [0x7fc8f2569fb7]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x12890) [0x7fc915de2890]
+[0x7fc8eb61d1ba]

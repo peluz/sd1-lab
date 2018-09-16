@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/pedro/Documents/unb/labCD/proj2/impact.xsl
+OUTFILE=/home/pedro/Documents/unb/labCD/proj2/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/home/pedro/Documents/unb/labCD/proj2
+LICENSE=iMPACT
+USER_INFO=iMPACT

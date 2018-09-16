@@ -1,0 +1,4 @@
+EN muxfunc NULL /home/pedro/Documents/unb/labCD/proj4/visto1/entity.vhd sub00/vhpl02 1537132050
+AR mux mux_arc /home/pedro/Documents/unb/labCD/proj4/visto1/mux.vhd sub00/vhpl01 1537132049
+EN mux NULL /home/pedro/Documents/unb/labCD/proj4/visto1/mux.vhd sub00/vhpl00 1537132048
+AR muxfunc behavioral /home/pedro/Documents/unb/labCD/proj4/visto1/entity.vhd sub00/vhpl03 1537132051
