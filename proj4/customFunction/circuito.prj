@@ -1,0 +1,3 @@
+vhdl work "decoder.vhd"
+vhdl work "../../proj3/mux8/mux8.vhd"
+vhdl work "circuito.vhd"

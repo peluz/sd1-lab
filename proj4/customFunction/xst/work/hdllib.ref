@@ -1,0 +1,6 @@
+AR circuito behavioral /home/pedro/Documents/unb/labCD/proj4/customFunction/circuito.vhd sub00/vhpl03 1537207378
+AR mux8 behavioral /home/pedro/Documents/unb/labCD/proj3/mux8/mux8.vhd sub00/vhpl05 1537207376
+EN mux8 NULL /home/pedro/Documents/unb/labCD/proj3/mux8/mux8.vhd sub00/vhpl04 1537207375
+AR decoder behavioral /home/pedro/Documents/unb/labCD/proj4/customFunction/decoder.vhd sub00/vhpl01 1537207374
+EN circuito NULL /home/pedro/Documents/unb/labCD/proj4/customFunction/circuito.vhd sub00/vhpl02 1537207377
+EN decoder NULL /home/pedro/Documents/unb/labCD/proj4/customFunction/decoder.vhd sub00/vhpl00 1537207373
