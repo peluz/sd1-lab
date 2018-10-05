@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/unb/labCD/proj5/shifter/shifter.xst" -ofn "/home/pedro/Documents/unb/labCD/proj5/shifter/shifter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc shifter.ucf -p xc3s100e-cp132-4 shifter.ngc shifter.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o shifter_map.ncd shifter.ngd shifter.pcf 
+par -w -intstyle ise -ol high -t 1 shifter_map.ncd shifter.ncd shifter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml shifter.twx shifter.ncd -o shifter.twr shifter.pcf -ucf shifter.ucf 
+bitgen -intstyle ise -f shifter.ut shifter.ncd 

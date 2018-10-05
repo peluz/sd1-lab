@@ -1,0 +1,12 @@
+V3 8
+FL /home/pedro/Documents/unb/labCD/proj5/sum4/adder.vhd 2018/08/31.09:19:59 P.20131013
+EN work/adder 1537712683 FL /home/pedro/Documents/unb/labCD/proj5/sum4/adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/adder/adder_arc 1537712684 \
+      FL /home/pedro/Documents/unb/labCD/proj5/sum4/adder.vhd EN work/adder 1537712683
+FL /home/pedro/Documents/unb/labCD/proj5/sum4/sum4.vhd 2018/09/23.11:24:36 P.20131013
+EN work/sum4 1537712685 FL /home/pedro/Documents/unb/labCD/proj5/sum4/sum4.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/sum4/Behavioral 1537712686 \
+      FL /home/pedro/Documents/unb/labCD/proj5/sum4/sum4.vhd EN work/sum4 1537712685 \
+      CP adder

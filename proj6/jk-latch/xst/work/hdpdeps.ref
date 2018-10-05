@@ -1,0 +1,8 @@
+V3 3
+FL /home/pedro/Documents/unb/labCD/proj5/jk-latch/jklatch.vhd 2018/10/05.17:04:09 P.20131013
+EN work/jklatch 1538769854 \
+      FL /home/pedro/Documents/unb/labCD/proj5/jk-latch/jklatch.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/jklatch/Behavioral 1538769855 \
+      FL /home/pedro/Documents/unb/labCD/proj5/jk-latch/jklatch.vhd \
+      EN work/jklatch 1538769854

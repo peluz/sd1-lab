@@ -8,5 +8,14 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/unb/labCD/proj3/mux8/mux8.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/unb/labCD/proj4/customFunction/circuito.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pedro/Documents/unb/labCD/proj4/customFunction/decoder.vhd&quot; into library work</arg>
+</msg>
+
 </messages>
 

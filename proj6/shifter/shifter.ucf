@@ -1,0 +1,18 @@
+NET CLK CLOCK_DEDICATED_ROUTE = FALSE;
+
+NET "RST" LOC = "C11";
+NET "LOAD" LOC = "G12";
+
+NET "CLK" LOC = "N3";
+NET "DIR" LOC = "E2";
+NET "L" LOC = "F3";
+NET "R" LOC = "G3";
+NET "D<3>" LOC = "B4";
+NET "D<2>" LOC = "K3";
+NET "D<1>" LOC = "L3";
+NET "D<0>" LOC = "P11";
+
+NET "Q<3>" LOC = "P6";
+NET "Q<2>" LOC = "P7";
+NET "Q<1>" LOC = "M11";
+NET "Q<0>" LOC = "M5";

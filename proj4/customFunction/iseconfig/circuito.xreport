@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-09-17T13:42:48</DateModified>
+  <DateModified>2018-09-23T11:12:14</DateModified>
   <ModuleName>circuito</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>/home/pedro/Documents/unb/labCD/proj4/customFunction/iseconfig/circuito.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/pedro/Documents/unb/labCD/proj4/customFunction</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>/home/pedro/Documents/unb/labCD/proj4/customFunction/</ImplementationReportsDirectory>
   <DateInitialized>2018-09-17T13:40:28</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

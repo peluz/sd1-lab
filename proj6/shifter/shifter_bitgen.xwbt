@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/pedro/Documents/unb/labCD/proj5/shifter/shifter.ncd
+OUTFILE=/home/pedro/Documents/unb/labCD/proj5/shifter/shifter.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=/home/pedro/Documents/unb/labCD/proj5/shifter
+LICENSE=WebPack
+USER_INFO=211577299_0_0_117

@@ -1,0 +1,8 @@
+V3 3
+FL /home/pedro/Documents/unb/labCD/proj5/shifter/shifter.vhd 2018/10/05.18:42:57 P.20131013
+EN work/shifter 1538776154 \
+      FL /home/pedro/Documents/unb/labCD/proj5/shifter/shifter.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/shifter/Behavioral 1538776155 \
+      FL /home/pedro/Documents/unb/labCD/proj5/shifter/shifter.vhd \
+      EN work/shifter 1538776154
