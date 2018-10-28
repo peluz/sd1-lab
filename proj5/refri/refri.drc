@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sun Oct 28 11:55:39 2018
+
+drc -z refri.ncd refri.pcf
+
+DRC detected 0 errors and 0 warnings.
