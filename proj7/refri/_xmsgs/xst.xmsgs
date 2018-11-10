@@ -5,5 +5,11 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/refri</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/pedro/Documents/unb/labCD/proj5/refri/refri.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/pedro/Documents/unb/labCD/proj7/refri/refri.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/refri/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">/home/pedro/Documents/unb/labCD/proj5/refri/refri.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">/home/pedro/Documents/unb/labCD/proj7/refri/refri.vhd</arg>&quot;.
+</msg>
+
 </messages>
 

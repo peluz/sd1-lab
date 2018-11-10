@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
 ise -dd _ngo -nt timestamp -uc refri.ucf -p xc3s100e-cp132-4 refri.ngc refri.ngd
 
-Reading NGO file "/home/pedro/Documents/unb/labCD/proj5/refri/refri.ngc" ...
+Reading NGO file "/home/pedro/Documents/unb/labCD/proj7/refri/refri.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -26,10 +26,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 399168 kilobytes
+Total memory usage is 399196 kilobytes
 
 Writing NGD file "refri.ngd" ...
-Total REAL time to NGDBUILD completion:  3 sec
+Total REAL time to NGDBUILD completion:  2 sec
 Total CPU time to NGDBUILD completion:   2 sec
 
 Writing NGDBUILD log file "refri.bld"...

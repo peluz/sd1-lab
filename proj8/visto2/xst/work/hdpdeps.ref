@@ -1,0 +1,55 @@
+V3 31
+FL /home/pedro/Documents/unb/labCD/proj8/contador10.vhdl 2018/11/10.12:52:09 P.20131013
+EN work/contador10 1541871898 \
+      FL /home/pedro/Documents/unb/labCD/proj8/contador10.vhdl \
+      PB ieee/std_logic_1164 1381692176
+AR work/contador10/contador10_arch 1541871899 \
+      FL /home/pedro/Documents/unb/labCD/proj8/contador10.vhdl EN work/contador10 1541871898
+FL /home/pedro/Documents/unb/labCD/proj8/contador100.vhdl 2018/11/10.13:03:43 P.20131013
+EN work/contador100 1541871902 \
+      FL /home/pedro/Documents/unb/labCD/proj8/contador100.vhdl \
+      PB ieee/std_logic_1164 1381692176
+AR work/contador100/contador100_arch 1541871903 \
+      FL /home/pedro/Documents/unb/labCD/proj8/contador100.vhdl \
+      EN work/contador100 1541871902 CP contador10
+FL /home/pedro/Documents/unb/labCD/proj8/convbinario7seg.vhdl 2016/10/29.20:09:34 P.20131013
+EN work/convbinario7seg 1541871906 \
+      FL /home/pedro/Documents/unb/labCD/proj8/convbinario7seg.vhdl \
+      PB ieee/std_logic_1164 1381692176
+AR work/convbinario7seg/convbinario7seg_arch 1541871907 \
+      FL /home/pedro/Documents/unb/labCD/proj8/convbinario7seg.vhdl \
+      EN work/convbinario7seg 1541871906
+FL /home/pedro/Documents/unb/labCD/proj8/divclock.vhdl 2016/10/25.21:25:54 P.20131013
+EN work/divclock 1541871900 \
+      FL /home/pedro/Documents/unb/labCD/proj8/divclock.vhdl \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/divclock/divclock_arch 1541871901 \
+      FL /home/pedro/Documents/unb/labCD/proj8/divclock.vhdl EN work/divclock 1541871900
+FL /home/pedro/Documents/unb/labCD/proj8/exp8visto1.vhdl 2018/11/10.13:09:39 P.20131013
+EN work/exp8visto1 1541871904 \
+      FL /home/pedro/Documents/unb/labCD/proj8/exp8visto1.vhdl \
+      PB ieee/std_logic_1164 1381692176
+AR work/exp8visto1/exp8visto1_arch 1541871905 \
+      FL /home/pedro/Documents/unb/labCD/proj8/exp8visto1.vhdl EN work/exp8visto1 1541871904 \
+      CP divclock CP contador100
+FL /home/pedro/Documents/unb/labCD/proj8/exp8visto2.vhdl 2018/11/10.15:44:38 P.20131013
+EN work/exp8visto2 1541871912 \
+      FL /home/pedro/Documents/unb/labCD/proj8/exp8visto2.vhdl \
+      PB ieee/std_logic_1164 1381692176
+AR work/exp8visto2/exp8visto2_arch 1541871913 \
+      FL /home/pedro/Documents/unb/labCD/proj8/exp8visto2.vhdl EN work/exp8visto2 1541871912 \
+      CP exp8visto1 CP convbinario7seg CP timeflags CP mostrador
+FL /home/pedro/Documents/unb/labCD/proj8/mostrador.vhdl 2016/10/26.10:54:36 P.20131013
+EN work/mostrador 1541871910 \
+      FL /home/pedro/Documents/unb/labCD/proj8/mostrador.vhdl \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mostrador/mostrador_arch 1541871911 \
+      FL /home/pedro/Documents/unb/labCD/proj8/mostrador.vhdl EN work/mostrador 1541871910
+FL /home/pedro/Documents/unb/labCD/proj8/timeflags.vhdl 2018/11/10.13:44:35 P.20131013
+EN work/timeflags 1541871908 \
+      FL /home/pedro/Documents/unb/labCD/proj8/timeflags.vhdl \
+      PB ieee/std_logic_1164 1381692176
+AR work/timeflags/timeflags_arch 1541871909 \
+      FL /home/pedro/Documents/unb/labCD/proj8/timeflags.vhdl EN work/timeflags 1541871908

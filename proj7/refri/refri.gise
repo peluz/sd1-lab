@@ -53,6 +53,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="refri.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="refri.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="refri.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="refri_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="refri_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="refri_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="refri_map.mrp" xil_pn:subbranch="Map"/>
@@ -77,6 +78,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1540738466" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1540738466">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1540738466" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8943188671238667171" xil_pn:start_ts="1540738466">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -102,10 +104,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1540738473" xil_pn:in_ck="164771362694632" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5668947546874629449" xil_pn:start_ts="1540738466">
+    <transform xil_pn:end_ts="1540738823" xil_pn:in_ck="164771362694632" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-8134238318106222781" xil_pn:start_ts="1540738817">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -124,18 +129,22 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1540738482" xil_pn:in_ck="-3731157519440495998" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2353021894805396179" xil_pn:start_ts="1540738476">
+    <transform xil_pn:end_ts="1540738827" xil_pn:in_ck="-3731157519440495998" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2353021894805396179" xil_pn:start_ts="1540738823">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="refri.bld"/>
       <outfile xil_pn:name="refri.ngd"/>
       <outfile xil_pn:name="refri_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1540738489" xil_pn:in_ck="-3731111107956094045" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1540738482">
+    <transform xil_pn:end_ts="1540738831" xil_pn:in_ck="-3731111107956094045" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1540738827">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="refri.pcf"/>
       <outfile xil_pn:name="refri_map.map"/>
@@ -146,10 +155,11 @@
       <outfile xil_pn:name="refri_summary.xml"/>
       <outfile xil_pn:name="refri_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1540738499" xil_pn:in_ck="2553177300530807260" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1540738489">
+    <transform xil_pn:end_ts="1540738839" xil_pn:in_ck="2553177300530807260" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1540738831">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="refri.ncd"/>
       <outfile xil_pn:name="refri.pad"/>
@@ -161,9 +171,10 @@
       <outfile xil_pn:name="refri_pad.txt"/>
       <outfile xil_pn:name="refri_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1540738542" xil_pn:in_ck="164771362685755" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1540738537">
+    <transform xil_pn:end_ts="1540738844" xil_pn:in_ck="164771362685755" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1540738839">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="refri.bgn"/>
       <outfile xil_pn:name="refri.bit"/>
@@ -173,9 +184,10 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1540738499" xil_pn:in_ck="-3737237423897151841" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1540738497">
+    <transform xil_pn:end_ts="1540738839" xil_pn:in_ck="-3737237423897151841" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1540738836">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="refri.twr"/>
       <outfile xil_pn:name="refri.twx"/>

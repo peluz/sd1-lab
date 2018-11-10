@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/pedro/Documents/unb/labCD/proj8/visto3/exp8visto3.xst" -ofn "/home/pedro/Documents/unb/labCD/proj8/visto3/exp8visto3.syr" 
+xst -intstyle ise -ifn "/home/pedro/Documents/unb/labCD/proj8/visto3/exp8visto3.xst" -ofn "/home/pedro/Documents/unb/labCD/proj8/visto3/exp8visto3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc visto3.ucf -p xc3s100e-cp132-4 exp8visto3.ngc exp8visto3.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o exp8visto3_map.ncd exp8visto3.ngd exp8visto3.pcf 
+par -w -intstyle ise -ol high -t 1 exp8visto3_map.ncd exp8visto3.ncd exp8visto3.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml exp8visto3.twx exp8visto3.ncd -o exp8visto3.twr exp8visto3.pcf -ucf visto3.ucf 
+bitgen -intstyle ise -f exp8visto3.ut exp8visto3.ncd 

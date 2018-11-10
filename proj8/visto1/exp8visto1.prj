@@ -1,0 +1,4 @@
+vhdl work "../contador10.vhdl"
+vhdl work "../divclock.vhdl"
+vhdl work "../contador100.vhdl"
+vhdl work "../exp8visto1.vhdl"

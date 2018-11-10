@@ -1,0 +1,479 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: exp8visto1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "exp8visto1.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "exp8visto1"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : exp8visto1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/pedro/Documents/unb/labCD/proj8/contador10.vhdl" in Library work.
+Architecture contador10_arch of Entity contador10 is up to date.
+Compiling vhdl file "/home/pedro/Documents/unb/labCD/proj8/divclock.vhdl" in Library work.
+Architecture divclock_arch of Entity divclock is up to date.
+Compiling vhdl file "/home/pedro/Documents/unb/labCD/proj8/contador100.vhdl" in Library work.
+Architecture contador100_arch of Entity contador100 is up to date.
+Compiling vhdl file "/home/pedro/Documents/unb/labCD/proj8/exp8visto1.vhdl" in Library work.
+Architecture exp8visto1_arch of Entity exp8visto1 is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <exp8visto1> in library <work> (architecture <exp8visto1_arch>).
+
+Analyzing hierarchy for entity <divclock> in library <work> (architecture <divclock_arch>).
+
+Analyzing hierarchy for entity <contador100> in library <work> (architecture <contador100_arch>).
+
+Analyzing hierarchy for entity <contador10> in library <work> (architecture <contador10_arch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <exp8visto1> in library <work> (Architecture <exp8visto1_arch>).
+Entity <exp8visto1> analyzed. Unit <exp8visto1> generated.
+
+Analyzing Entity <divclock> in library <work> (Architecture <divclock_arch>).
+Entity <divclock> analyzed. Unit <divclock> generated.
+
+Analyzing Entity <contador100> in library <work> (Architecture <contador100_arch>).
+WARNING:Xst:753 - "/home/pedro/Documents/unb/labCD/proj8/contador100.vhdl" line 30: Unconnected output port 'rco' of component 'contador10'.
+Entity <contador100> analyzed. Unit <contador100> generated.
+
+Analyzing Entity <contador10> in library <work> (Architecture <contador10_arch>).
+Entity <contador10> analyzed. Unit <contador10> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <divclock>.
+    Related source file is "/home/pedro/Documents/unb/labCD/proj8/divclock.vhdl".
+    Found 32-bit up counter for signal <cntDiv>.
+    Found 1-bit register for signal <slowclock>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <divclock> synthesized.
+
+
+Synthesizing Unit <contador10>.
+    Related source file is "/home/pedro/Documents/unb/labCD/proj8/contador10.vhdl".
+    Found finite state machine <FSM_0> for signal <currentState>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 140                                            |
+    | Inputs             | 13                                             |
+    | Outputs            | 5                                              |
+    | Clock              | clock                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | st0                                            |
+    | Power Up State     | st0                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16x20-bit ROM for signal <D$rom0000>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+Unit <contador10> synthesized.
+
+
+Synthesizing Unit <contador100>.
+    Related source file is "/home/pedro/Documents/unb/labCD/proj8/contador100.vhdl".
+Unit <contador100> synthesized.
+
+
+Synthesizing Unit <exp8visto1>.
+    Related source file is "/home/pedro/Documents/unb/labCD/proj8/exp8visto1.vhdl".
+Unit <exp8visto1> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x20-bit ROM                                         : 2
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 1
+ 1-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <c1/contador_unidade/currentState/FSM> on signal <currentState[1:4]> with user encoding.
+Optimizing FSM <c1/contador_dezena/currentState/FSM> on signal <currentState[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ st0   | 0000
+ st1   | 0001
+ st2   | 0010
+ st3   | 0011
+ st4   | 0100
+ st5   | 0101
+ st6   | 0110
+ st7   | 0111
+ st8   | 1000
+ st9   | 1001
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <exp8visto1> ...
+
+Optimizing unit <contador10> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block exp8visto1, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : exp8visto1.ngr
+Top Level Output File Name         : exp8visto1
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 20
+
+Cell Usage :
+# BELS                             : 140
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 31
+#      LUT2                        : 3
+#      LUT2_L                      : 2
+#      LUT3                        : 3
+#      LUT4                        : 19
+#      LUT4_D                      : 1
+#      LUT4_L                      : 3
+#      MUXCY                       : 39
+#      MUXF5                       : 3
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 41
+#      FDE                         : 1
+#      FDR                         : 35
+#      FDRS                        : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 19
+#      IBUF                        : 11
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       32  out of    960     3%  
+ Number of Slice Flip Flops:             41  out of   1920     2%  
+ Number of 4 input LUTs:                 64  out of   1920     3%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of     83    24%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                          | Load  |
+-----------------------------------+------------------------------------------------+-------+
+clock                              | BUFGP                                          | 33    |
+c0/slowclock                       | NONE(c1/contador_unidade/currentState_FSM_FFd4)| 8     |
+-----------------------------------+------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.240ns (Maximum Frequency: 190.857MHz)
+   Minimum input arrival time before clock: 4.411ns
+   Maximum output required time after clock: 4.532ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 5.240ns (frequency: 190.857MHz)
+  Total number of paths / destination ports: 1585 / 66
+-------------------------------------------------------------------------
+Delay:               5.240ns (Levels of Logic = 9)
+  Source:            c0/cntDiv_8 (FF)
+  Destination:       c0/cntDiv_0 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: c0/cntDiv_8 to c0/cntDiv_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  c0/cntDiv_8 (c0/cntDiv_8)
+     LUT4:I0->O            1   0.704   0.000  c0/cntDiv_cmp_eq0000_wg_lut<0> (c0/cntDiv_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  c0/cntDiv_cmp_eq0000_wg_cy<0> (c0/cntDiv_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  c0/cntDiv_cmp_eq0000_wg_cy<1> (c0/cntDiv_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  c0/cntDiv_cmp_eq0000_wg_cy<2> (c0/cntDiv_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  c0/cntDiv_cmp_eq0000_wg_cy<3> (c0/cntDiv_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  c0/cntDiv_cmp_eq0000_wg_cy<4> (c0/cntDiv_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  c0/cntDiv_cmp_eq0000_wg_cy<5> (c0/cntDiv_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  c0/cntDiv_cmp_eq0000_wg_cy<6> (c0/cntDiv_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          33   0.331   1.263  c0/cntDiv_cmp_eq0000_wg_cy<7> (c0/cntDiv_cmp_eq0000)
+     FDR:R                     0.911          c0/cntDiv_0
+    ----------------------------------------
+    Total                      5.240ns (3.355ns logic, 1.885ns route)
+                                       (64.0% logic, 36.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'c0/slowclock'
+  Clock period: 4.405ns (frequency: 227.015MHz)
+  Total number of paths / destination ports: 42 / 8
+-------------------------------------------------------------------------
+Delay:               4.405ns (Levels of Logic = 3)
+  Source:            c1/contador_unidade/currentState_FSM_FFd2 (FF)
+  Destination:       c1/contador_dezena/currentState_FSM_FFd3 (FF)
+  Source Clock:      c0/slowclock rising
+  Destination Clock: c0/slowclock rising
+
+  Data Path: c1/contador_unidade/currentState_FSM_FFd2 to c1/contador_dezena/currentState_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.591   0.808  c1/contador_unidade/currentState_FSM_FFd2 (c1/contador_unidade/currentState_FSM_FFd2)
+     LUT4_D:I0->LO         1   0.704   0.135  c1/contador_unidade/currentState_FSM_Out01 (N22)
+     LUT3:I2->O            2   0.704   0.451  c1/contador_dezena/currentState_FSM_FFd3-In110 (c1/contador_dezena/currentState_FSM_N0)
+     LUT4:I3->O            1   0.704   0.000  c1/contador_dezena/currentState_FSM_FFd3-In431 (c1/contador_dezena/currentState_FSM_FFd3-In43)
+     FDRS:D                    0.308          c1/contador_dezena/currentState_FSM_FFd3
+    ----------------------------------------
+    Total                      4.405ns (3.011ns logic, 1.394ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'c0/slowclock'
+  Total number of paths / destination ports: 51 / 21
+-------------------------------------------------------------------------
+Offset:              4.411ns (Levels of Logic = 2)
+  Source:            load (PAD)
+  Destination:       c1/contador_unidade/currentState_FSM_FFd3 (FF)
+  Destination Clock: c0/slowclock rising
+
+  Data Path: load to c1/contador_unidade/currentState_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.218   1.158  load_IBUF (load_IBUF)
+     LUT3:I0->O            1   0.704   0.420  c1/contador_unidade/currentState_FSM_FFd3-In5 (c1/contador_unidade/currentState_FSM_FFd3-In5)
+     FDRS:S                    0.911          c1/contador_unidade/currentState_FSM_FFd3
+    ----------------------------------------
+    Total                      4.411ns (2.833ns logic, 1.578ns route)
+                                       (64.2% logic, 35.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'c0/slowclock'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.532ns (Levels of Logic = 1)
+  Source:            c1/contador_unidade/currentState_FSM_FFd3 (FF)
+  Destination:       unidade<1> (PAD)
+  Source Clock:      c0/slowclock rising
+
+  Data Path: c1/contador_unidade/currentState_FSM_FFd3 to unidade<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRS:C->Q             6   0.591   0.669  c1/contador_unidade/currentState_FSM_FFd3 (c1/contador_unidade/currentState_FSM_FFd3)
+     OBUF:I->O                 3.272          unidade_1_OBUF (unidade<1>)
+    ----------------------------------------
+    Total                      4.532ns (3.863ns logic, 0.669ns route)
+                                       (85.2% logic, 14.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.90 secs
+ 
+--> 
+
+
+Total memory usage is 529576 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

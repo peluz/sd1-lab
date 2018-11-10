@@ -1,0 +1,2 @@
+vhdl work "../contador10.vhdl"
+vhdl work "../contador100.vhdl"

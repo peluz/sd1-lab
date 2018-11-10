@@ -1,0 +1,5 @@
+set -tmpdir "/home/pedro/Documents/unb/labCD/proj8/visto1/xst/projnav.tmp"
+set -xsthdpdir "/home/pedro/Documents/unb/labCD/proj8/visto1/xst"
+elaborate
+-ifn contador100.prj
+-ifmt mixed

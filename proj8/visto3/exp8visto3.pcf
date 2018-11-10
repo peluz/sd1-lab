@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Nov 10 17:29:49 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "sensorA" LOCATE = SITE "K3" LEVEL 1;
+COMP "num7seg<0>" LOCATE = SITE "N13" LEVEL 1;
+COMP "sensorB" LOCATE = SITE "L3" LEVEL 1;
+COMP "num7seg<1>" LOCATE = SITE "M12" LEVEL 1;
+COMP "num7seg<2>" LOCATE = SITE "L13" LEVEL 1;
+COMP "num7seg<3>" LOCATE = SITE "P12" LEVEL 1;
+COMP "num7seg<4>" LOCATE = SITE "N11" LEVEL 1;
+COMP "num7seg<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "num7seg<6>" LOCATE = SITE "H12" LEVEL 1;
+COMP "num7seg<7>" LOCATE = SITE "L14" LEVEL 1;
+COMP "displays<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "displays<1>" LOCATE = SITE "J12" LEVEL 1;
+COMP "displays<2>" LOCATE = SITE "M13" LEVEL 1;
+NET "clock_BUFGP/IBUFG" BEL "clock_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+COMP "displays<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "ligadesliga" LOCATE = SITE "P11" LEVEL 1;
+COMP "clock" LOCATE = SITE "B8" LEVEL 1;
+SCHEMATIC END;
+

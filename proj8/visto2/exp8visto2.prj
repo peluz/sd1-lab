@@ -1,0 +1,8 @@
+vhdl work "../contador10.vhdl"
+vhdl work "../divclock.vhdl"
+vhdl work "../contador100.vhdl"
+vhdl work "../timeflags.vhdl"
+vhdl work "../mostrador.vhdl"
+vhdl work "../exp8visto1.vhdl"
+vhdl work "../convbinario7seg.vhdl"
+vhdl work "../exp8visto2.vhdl"

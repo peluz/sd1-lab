@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -107,7 +107,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/pedro/Documents/unb/labCD/proj5/refri/refri.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/refri is now defined in a different file.  It was defined in "/home/pedro/Documents/unb/labCD/proj5/refri/refri.vhd", and is now defined in "/home/pedro/Documents/unb/labCD/proj7/refri/refri.vhd".
+WARNING:HDLParsers:3607 - Unit work/refri/Behavioral is now defined in a different file.  It was defined in "/home/pedro/Documents/unb/labCD/proj5/refri/refri.vhd", and is now defined in "/home/pedro/Documents/unb/labCD/proj7/refri/refri.vhd".
+Compiling vhdl file "/home/pedro/Documents/unb/labCD/proj7/refri/refri.vhd" in Library work.
 Architecture behavioral of Entity refri is up to date.
 
 =========================================================================
@@ -130,7 +132,7 @@ Entity <refri> analyzed. Unit <refri> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <refri>.
-    Related source file is "/home/pedro/Documents/unb/labCD/proj5/refri/refri.vhd".
+    Related source file is "/home/pedro/Documents/unb/labCD/proj7/refri/refri.vhd".
     Found finite state machine <FSM_0> for signal <currentState>.
     -----------------------------------------------------------------------
     | States             | 9                                              |
@@ -370,14 +372,14 @@ Offset:              5.982ns (Levels of Logic = 2)
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.59 secs
+Total CPU time to Xst completion: 3.42 secs
  
 --> 
 
 
-Total memory usage is 527364 kilobytes
+Total memory usage is 527404 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

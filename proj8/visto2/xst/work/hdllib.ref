@@ -1,0 +1,16 @@
+EN contador10 NULL /home/pedro/Documents/unb/labCD/proj8/contador10.vhdl sub00/vhpl02 1541871898
+AR convbinario7seg convbinario7seg_arch /home/pedro/Documents/unb/labCD/proj8/convbinario7seg.vhdl sub00/vhpl11 1541871907
+EN exp8visto1 NULL /home/pedro/Documents/unb/labCD/proj8/exp8visto1.vhdl sub00/vhpl08 1541871904
+EN exp8visto2 NULL /home/pedro/Documents/unb/labCD/proj8/exp8visto2.vhdl sub00/vhpl14 1541871912
+AR exp8visto1 exp8visto1_arch /home/pedro/Documents/unb/labCD/proj8/exp8visto1.vhdl sub00/vhpl09 1541871905
+EN contador100 NULL /home/pedro/Documents/unb/labCD/proj8/contador100.vhdl sub00/vhpl06 1541871902
+AR timeflags timeflags_arch /home/pedro/Documents/unb/labCD/proj8/timeflags.vhdl sub00/vhpl01 1541871909
+EN divclock NULL /home/pedro/Documents/unb/labCD/proj8/divclock.vhdl sub00/vhpl04 1541871900
+AR divclock divclock_arch /home/pedro/Documents/unb/labCD/proj8/divclock.vhdl sub00/vhpl05 1541871901
+AR exp8visto2 exp8visto2_arch /home/pedro/Documents/unb/labCD/proj8/exp8visto2.vhdl sub00/vhpl15 1541871913
+EN convbinario7seg NULL /home/pedro/Documents/unb/labCD/proj8/convbinario7seg.vhdl sub00/vhpl10 1541871906
+AR contador100 contador100_arch /home/pedro/Documents/unb/labCD/proj8/contador100.vhdl sub00/vhpl07 1541871903
+AR mostrador mostrador_arch /home/pedro/Documents/unb/labCD/proj8/mostrador.vhdl sub00/vhpl13 1541871911
+AR contador10 contador10_arch /home/pedro/Documents/unb/labCD/proj8/contador10.vhdl sub00/vhpl03 1541871899
+EN mostrador NULL /home/pedro/Documents/unb/labCD/proj8/mostrador.vhdl sub00/vhpl12 1541871910
+EN timeflags NULL /home/pedro/Documents/unb/labCD/proj8/timeflags.vhdl sub00/vhpl00 1541871908
